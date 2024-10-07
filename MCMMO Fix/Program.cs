@@ -55,9 +55,9 @@ static void ParseFileToObject(Dictionary<string, UserLevels> beforeUsers, string
 static int DetermineNewValue(int newVal, int oldVal, string skillName, string playerName)
 {
 	// If a player is deemed to have earned too many levels based on thresholds
-	if (oldVal - newVal > Constants.thresholds[skillName])
+	if (newVal - oldVal > Constants.thresholds[skillName])
 	{
-		Console.Write($"{playerName}'s {skillName} skill should be reduced from {newVal} to {oldVal + Constants.thresholds[skillName]}");
+		Console.Write($"{playerName}'s {skillName} skill should be reduced from {newVal} to {oldVal + Constants.thresholds[skillName]} \n");
 		return oldVal + Constants.thresholds[skillName];
 	}
 	return newVal;
