@@ -1,7 +1,7 @@
 ## For adjusting MCMMO levels
 
 ## How to use:
-1. Provide the two log files bookending the exploit time. This solution assumes the exact formatting that fruit provided, though the ParseFile method in Program.cs can be easily modified.
+1. Provide the two log files bookending the exploit time. This solution assumes the exact formatting that fruit provided (with two logs included), though the ParseFile method in Program.cs can be easily modified.
 2. Update Constants.threshholds in Constants.cs. The way to think about these values is "what is the maximum amount of levels in each stat players should be allowed to retain
 3. Run the project
 
