@@ -11,6 +11,8 @@ public class UserLevels
 	public int AXES { get; set; } = 0;
 	public int ACROBATICS { get; set; } = 0;
 	public int TAMING { get; set; } = 0;
+	public int ALCHEMY { get; set; } = 0;
+	public int FISHING { get; set; } = 0;
 }
 public class UserXp
 {
